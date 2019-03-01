@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        body,div{margin: 0px;padding:0px}
+        body{
+            background: url("img/timg.jpg") no-repeat;
+            background-size: 100%;
+        }
+        #div_login{
+            text-align: center;
+            margin: 300px auto;
+        }
+        div input{
+            margin: 5px;
+            height: 1.5rem;
+            width: 10rem;
+        }
+        div #bto_login{
+            height: 2rem;
+            width: 5rem;
+            border-radius: 0.5rem;
+            background-color: aquamarine;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="div_login" class="div_login">
+        <input type="text" id="name" class="input_name" placeholder="用户名"><br>
+        <input type="password" id="password" class="input_password" placeholder="用户密码"><br>
+        <input type="button" id="bto_login" class="bto_login" value="登录">
+    </div>
+</body>
+</html>
