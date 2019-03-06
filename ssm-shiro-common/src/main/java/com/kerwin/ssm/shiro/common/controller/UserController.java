@@ -1,4 +1,4 @@
-package com.kerwin.ssm.shiro.common.cotroller;
+package com.kerwin.ssm.shiro.common.controller;
 
 import com.kerwin.ssm.shiro.common.po.User;
 import com.kerwin.ssm.shiro.common.service.UserService;
@@ -15,11 +15,12 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping(value = "/login")
-public class UserCotroller
+public class UserController
 {
     @Autowired
     UserService userService;
 
+    @RequestMapping("/getAllUser")
     public User getAllUser(){
         User user = userService.getAllUser();
         return user;
